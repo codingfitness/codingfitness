@@ -1,4 +1,4 @@
-Learning
-========
+Coding fitness
+==============
 
-I am just learning to use GitHub.
+I will use this repo to solve coding toy problems of different levels of difficulty. The main purpose of this exercise is to 'stay fit'. 
