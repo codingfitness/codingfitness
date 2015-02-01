@@ -4,7 +4,6 @@
 
 
 var isSquare = function(n){
-  // Your code here
   var i = 0;
   while (i * i <=n) {
     if (i * i === n) {
