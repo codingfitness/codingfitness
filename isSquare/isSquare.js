@@ -12,3 +12,4 @@ var isSquare = function(n){
   }
   return false;
 }
+// it works
