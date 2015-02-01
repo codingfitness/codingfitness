@@ -9,8 +9,8 @@ The branch master contains the prompts for all the problems without the solution
 The pull requests with solutions should be submitted to the individual branches of each collaborator.
 
 There are two ways to work with this repo:
-1. Solve toy problems submitted by others.
-2. Submit your own toy problems for your classmates to solve.
+- 1) Solve toy problems submitted by others.
+- 2) Submit your own toy problems for your classmates to solve.
 
 1) In order to solve toy problems, clone and fork this repo.
 Add the original repo as a remote ('git remote add upstream https://github.com/codingfitness/codingfitness.git').
