@@ -4,4 +4,5 @@
 
 var isSquare = function(n){
   // Your code here
+  console.log('hello');
 }
