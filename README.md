@@ -15,7 +15,7 @@ There are two ways to work with this repo:
 1) In order to solve toy problems, clone and fork this repo.
 Add the original repo as a remote ('git remote add upstream https://github.com/codingfitness/codingfitness.git').
 
-Solve the toy problem and test it locally if you want.
+Solve the toy problem and test it locally if you want by running the SpecRunner.html file in your browser.
 Push your solution to your fork of the repo and then submit the pull request.
 
 The pull request should be submitted to your personal branch of the repo. In this case the pull request will be merged automatically.
