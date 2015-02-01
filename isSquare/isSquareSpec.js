@@ -2,6 +2,7 @@ describe('Basic tests', function() {
   
   it('should know that negative numbers cannot be squares of other integer numbers', function() {
     expect(isSquare(-1)).to.equal(false);
+    expect(isSquare(-100)).to.equal(false);
   });
 
   it('should know that fractions cannot be squares of integer numbers', function() {
@@ -24,6 +25,7 @@ describe('Basic tests', function() {
     expect(isSquare(11)).to.equal(false);
     expect(isSquare(29)).to.equal(false);
     expect(isSquare(9998)).to.equal(false);
+    expect(isSquare(75)).to.equal(false);
   });
 
 });
