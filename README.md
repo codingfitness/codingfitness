@@ -6,7 +6,7 @@ This repo has been created to solve coding toy problems of different levels of d
 Each problem is in its own folder.
 
 The branch master contains the prompts for all the problems without the solutions.
-The pull requests with solutions should be submitted to the individual branch of each collaborator.
+The pull requests with solutions should be submitted to the individual branches of each collaborator.
 
 There are two ways to work with this repo:
 1) Solve toy problems submitted by others.
@@ -26,6 +26,6 @@ To get new toy problems, run the command 'git pull remote master' in your termin
 2) In order to submit your own toy problem, create a new folder in the local copy of your repo. Add three files:
 a) The file with the problem itself but without the solution;
 b) The file with tests;
-c) The spec runner (file SpecRunner.html; the script tag in this file should refer to the files a) and b)).
+c) The spec runner (file SpecRunner.html, which can be easily copied from another problem's folder; the script tag in this file should refer to the files a) and b)).
 
-Submit a pull request to the original repo's master branch. 
+Submit a pull request to the original repo's master branch, and someone will merge it manually. 
