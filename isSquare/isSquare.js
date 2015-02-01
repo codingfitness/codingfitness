@@ -5,4 +5,3 @@
 var isSquare = function(n){
   // Your code here
 }
-// it works
