@@ -25,6 +25,7 @@ describe('Basic tests', function() {
     expect(isSquare(11)).to.equal(false);
     expect(isSquare(29)).to.equal(false);
     expect(isSquare(9998)).to.equal(false);
+    expect(isSquare(75)).to.equal(false);
   });
 
 });
