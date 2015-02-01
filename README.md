@@ -5,6 +5,9 @@ This repo has been created to solve coding toy problems of different levels of d
 
 Each problem is in its own folder.
 
+The branch master contains the prompts for all the problems without the solutions.
+The pull requests with solutions should be submitted to the individual branch of each collaborator.
+
 There are two ways to work with this repo:
 1) Solve toy problems submitted by others.
 2) Submit your own toy problems for your classmates to solve.
