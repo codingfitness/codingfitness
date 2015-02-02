@@ -14,6 +14,7 @@ var targetSum = function(array, n){
   if (array.length < 2) {
   	return null;
   }
+  
   var currentDistance;
   var newDistance;
   var currentPair = [];
