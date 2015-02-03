@@ -11,6 +11,8 @@ ex//
   note: eql in chai is a shortcut for deep equality.
  */
 
+//To run the tests, run 'npm intall' from the root (codingfitness) folder,
+//and then run 'npm test' from the balancePoint folder.
 
 module.exports = function(array){
 };
