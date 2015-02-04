@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Math Conversion Test Suite [Mocha]</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../lib/css/mocha.css" />
+    <script src="../lib/jquery.js"></script>
+    <script src="../lib/picomodal.js"></script>
+    <script src="../lib/expect.js"></script>
+    <script src="../lib/mocha.js"></script>
+    <script src="../lib/sinon.js"></script>
+    <script src="../lib/underscore.js"></script>
+
+    <script>
+      // Tell mocha to use bdd-style expects
+      mocha.setup('bdd');
+    </script>
+
+    <!-- Load tests and helpers here -->
+    <script src="charSetInString.js"></script>
+    <script src="charSetInStringSpec.js"></script>
+
+
+    <script>
+      // Mocha expects a global onload var here and automagically executes it on pageload
+      onload = function(){
+        var runner = window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run();
+      };
+    </script>
+  </head>
+  <body>
+    <div id="mocha"></div>
+  </body>
+</html>
