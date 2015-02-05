@@ -8,9 +8,11 @@ var isSquare = function(n){
     return true;
   }
 
-  for(var i = 0; i <= n / 2; i ++) {
+  for(var i = 2; i <= n / 2; i ++) {
     if(i * i === n) {
       return true;
+    } else if(i * i > n) {
+      return false;
     }
   }
   return false;
