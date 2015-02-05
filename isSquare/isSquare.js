@@ -4,4 +4,14 @@
 
 var isSquare = function(n){
   // Your code here
+  if(n === 0){
+  	return true;
+  } else if (n > 0){
+  	for(var i = n; i >0; i--){
+  		if(n/i === i){
+  			return true;
+  		}
+  	}
+  } else return false;
+  return false;
 }
