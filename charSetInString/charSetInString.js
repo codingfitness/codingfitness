@@ -8,6 +8,8 @@
 
 // Result: "cba"
 
+// The target time complexity is linear!
+
 var charSetInString = function(chars, str){
 
 };
