@@ -21,7 +21,7 @@ Push your solution to your fork of the repo and then submit the pull request.
 The pull request should be submitted to your personal branch of the repo. In this case the pull request will be merged automatically.
 Please do not make pull request with solutions to the master branch.
 
-To get new toy problems, run the command 'git pull remote master' in your terminal.
+To get new toy problems, run the command 'git pull upstream master' in your terminal.
 
 2) In order to submit your own toy problem, create a new folder in the local copy of your repo. Add three files:
 - a) The file with the problem itself but without the solution;

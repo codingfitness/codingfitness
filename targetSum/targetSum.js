@@ -9,5 +9,29 @@
 // If the length of the original unsorted array is less than 2, return null.
 
 var targetSum = function(array, n){
+	var best = null;
+	var resultArr = null;
+  var recurse = function(index){
+  	if(index >= array.length){
+  		return;
+  	}
+  	for(var i = index + 1; i < array.length; i ++){
+  		var biSum = array[index]+array[i];
+  		if(n - biSum >= 0 && best === null){
+  			best = n - biSum;
+  			resultArr = [array[index],array[i]];
+  		} else if (n-biSum >=0 && best!==null && n-biSum <best){
+  			best = n-biSum;
+  			resultArr = [array[index],array[i]];
+  		}
+  	}
+  	recurse(index+1);
+  }
   // Your code here
+  if(array.length < 2){
+  	return best;
+  } else {
+  	recurse(0)
+  }
+  return resultArr;
 }
