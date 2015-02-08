@@ -15,7 +15,42 @@
  * EXTRA CREDIT: solve recursively 
  ****************************************************************************/
 
+var checkArrayFalse = function(array) {
+  var sum = 0;
+  var value;
+  for (var i = 0; i<array.length; i++) {
+  	if (array[i] === false) {
+  	  sum++;
+  	} else {
+  	  value = array[i];
+  	}
+  }
+  if (sum === array.length - 1) {
+  	return value;
+  }
+  return false;
+}
 
 var loneSurvivor = function(chairs, skip) {
     //your code here
+  var loneSurvivorHelper = function(chairs, skip, start) {
+    if (checkArrayFalse(chairs)) {
+  	  return checkArrayFalse(chairs);
+    }
+    var sumJump = 0;
+    while (sumJump < skip) {
+      start = (start + 1) % chairs.length;
+      if (chairs [start]) {
+      	sumJump++;
+      }
+    }
+    chairs[start] = false;
+    start = (start + 1) % chairs.length;
+    while (!chairs[start]) {
+      start = (start + 1) % chairs.length;
+    }
+  	return loneSurvivorHelper(chairs, skip+1, start);
+  }
+  
+  return loneSurvivorHelper(chairs, skip, 0);
 };
