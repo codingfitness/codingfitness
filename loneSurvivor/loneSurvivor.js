@@ -16,6 +16,8 @@
  ****************************************************************************/
 
 
+
+
 var checkArrayFalse = function(array) {
   var sum = 0;
   var value;
