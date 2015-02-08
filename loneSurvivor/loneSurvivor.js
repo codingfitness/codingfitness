@@ -15,6 +15,7 @@
  * EXTRA CREDIT: solve recursively 
  ****************************************************************************/
 
+
 var checkArrayFalse = function(array) {
   var sum = 0;
   var value;
