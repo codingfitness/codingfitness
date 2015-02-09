@@ -15,7 +15,6 @@
  * EXTRA CREDIT: solve recursively 
  ****************************************************************************/
 
-
 var loneSurvivor = function(chairs, skip) {
-    //your code here
+  //your code here
 };
