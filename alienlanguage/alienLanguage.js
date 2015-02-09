@@ -20,7 +20,7 @@
  Write a program that takes three inputs:
  1) A string representing a pattern (e.g. "(ab)d(dc)");
  2) A dictionary of alien words (an array of words).
- 3) The number of letters in the alien language (L).
+ 3) The number of letters in the alien words (L).
 
  The output is the number of words from the dictionary that match the given pattern.
 
