@@ -15,6 +15,48 @@
  * EXTRA CREDIT: solve recursively 
  ****************************************************************************/
 
-var loneSurvivor = function(chairs, skip) {
-  //your code here
-};
+// Solving recursively
+var loneSurvivor = function(chairs, skip, i) {
+
+  i = i || 0;
+  
+
+  var length = chairs.length;
+
+  if(length === 1) {
+    return chairs[0];
+  }
+
+  chairs.splice(i,1);
+  length -= 1;
+
+  skip ++;
+  i += skip;
+
+  i = i > length - 1 ? i % length : i;
+
+  return loneSurvivor(chairs, skip, i)
+}
+
+
+
+// Using while loop
+// var loneSurvivor = function(chairs, skip) {
+//   //your code here
+
+//   var i = 0;
+
+//     chairs.splice(i,1);
+//     skip ++;
+//     i += skip;
+
+//     if(i > chairs.length - 1) {
+//       i %= chairs.length;
+//     }
+//   }
+
+//   return chairs[0];
+// };
+
+
+
