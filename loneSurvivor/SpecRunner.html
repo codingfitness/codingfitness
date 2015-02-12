@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-
     <title>Math Conversion Test Suite [Mocha]</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="../lib/css/mocha.css" />
@@ -18,14 +17,14 @@
     </script>
 
     <!-- Load tests and helpers here -->
-    <script src="tapeEquilibrium.js"></script>
-    <script src="tapeEquilibriumSpecs.js"></script>
+    <script src="loneSurvivor.js"></script>
+    <script src="loneSurvivorSpec.js"></script>
 
 
     <script>
       // Mocha expects a global onload var here and automagically executes it on pageload
       onload = function(){
-        var runner = window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run();       
+        var runner = window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run();
       };
     </script>
   </head>
