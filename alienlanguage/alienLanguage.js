@@ -36,8 +36,31 @@
  
  */
 
+var makeArray = function(str) {
+  return str.split('').filter(function(value) {
+    return value !== '(' || value !== ')';
+  });
+}
+
+console.log(makeArray('(ab)'));
 
 var numberWords = function (pattern, dictionary, L) {
   // Your code here
+  var patternArray = pattern.match(/(\(\w+\)|\w)/g).forEach(function(value) {
+    if(value.length > 1) {
+      makeArray(value);
+    }
+  });
+
+  console.log(patternArray);
+  var count = 0;
+  var recurse = function(word) {
+    if(word.length === L) {
+      return 1;
+    }
+
+
+  }
+
 }
 
