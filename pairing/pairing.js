@@ -15,4 +15,10 @@
 
 var pairing = function (N) {
   //Your code here
+  var result = 1;
+  while (N > 2) {
+    result = result * (N-1);
+    N = N -2;
+  }
+  return result;
 } 
