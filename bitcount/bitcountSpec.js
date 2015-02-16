@@ -32,7 +32,7 @@ describe('bitcount', function() {
     expect(bitcount(33)).to.equal(2);
   });
 
-  it('should find the hamming weight for test case 6', function() {
+  it('should find the hamming weight for test case 9', function() {
     expect(bitcount(1235)).to.equal(6);
   });
 
