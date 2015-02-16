@@ -20,7 +20,7 @@
  Write a program that takes three inputs:
  1) A string representing a pattern (e.g. "(ab)d(dc)");
  2) A dictionary of alien words (an array of words).
- 3) The number of letters in the alien words (L).
+ 3) The number of letters in the alien language (L).
 
  The output is the number of words from the dictionary that match the given pattern.
 
@@ -36,8 +36,67 @@
  
  */
 
+var checkPattern = function(pattern, dictionary, L) {
+  if (pattern.indexOf("(") === -1 && pattern.length === L) {
+    for (var i = 0; i < dictionary.length; i++) {
+      if (pattern === dictionary[i]) {
+      	return true;
+      }
+    }
+  }
+  return false;
+}
+
+var checkStart = function(start, dictionary) {
+  var len = start.length;
+  for (var i = 0; i < dictionary.length; i++) {
+    if (start === dictionary[i].slice(0, len)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+var getEnd = function (pattern, startPosition) {
+  for (var i=startPosition; i < pattern.length; i++) {
+    if (pattern.charAt(i) === ")") {
+      return [pattern.slice(i+1), i];
+    }
+  }
+}
+
+var getFirstParen = function (pattern) {
+  for (var i = 0; i < pattern.length; i++) {
+  	if (pattern.charAt(i) === "(") {
+  	  return i;
+  	}
+  }
+}
 
 var numberWords = function (pattern, dictionary, L) {
-  // Your code here
+  // Your code here.
+  var sum = 0;
+  var numberWordsHelper = function (pattern, dictionary, L, i) {
+    if (checkPattern(pattern, dictionary, L)) {
+      sum++;
+    } else if (pattern.indexOf("(") === -1 && pattern.length !== L) {
+      return;
+    } else if (pattern.indexOf("(") === -1 && pattern.length === L && !checkPattern(pattern, dictionary, L)) {
+      return;
+    } else {
+      var startPos = getFirstParen(pattern);
+      var remainder = getEnd(pattern, startPos+1)[0];
+      var endPos = getEnd(pattern, startPos+1)[1];
+      for (var j = startPos+1; j<endPos; j++) {
+        var startPattern = pattern.slice(0, startPos) + pattern.charAt(j);
+        if (checkStart(startPattern, dictionary)) {
+          var newPattern = startPattern+remainder;
+          numberWordsHelper(newPattern, dictionary, L, i+1);
+        }          
+      }
+    }
+  }
+  numberWordsHelper(pattern, dictionary, L, 0);
+  return sum;
 }
 
