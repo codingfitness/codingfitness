@@ -52,7 +52,7 @@ var numberWords = function (pattern, dictionary, L) {
     }
   });
 
-  console.log(patternArray);
+  // console.log(patternArray);
   var count = 0;
   var recurse = function(word) {
     if(word.length === L) {
