@@ -8,7 +8,7 @@
 // that is equal to its index.
 
 // Example
-// In the array {-3, -1, 1, 3, 5}, the number 3 equals its index 3.
+// In the array [-3, -1, 1, 3, 5], the number 3 equals its index 3.
 
 // If there are no integers like this in the array, return the string "no".
 // If there are several integers that satisfy this condition, return any of them.
