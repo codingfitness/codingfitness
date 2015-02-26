@@ -11,13 +11,4 @@ binarySum ([1, 0], [0, 1]); // returns [0, 1, 1]
 
 var binarySum = function (a, b) {
   // Your code here
-  var result = [];
-  var n = a.length;
-  var transfer = 0;
-  for (var i = 0; i<n; i++) {
-  	result[n-i] = (a[n-1-i] + b[n-1-i] + transfer) % 2;
-  	transfer = (a[n-1-i] + b[n-1-i] + transfer) >=2 ? 1 : 0;
-  }
-  result[0] = transfer;
-  return result;
 }
