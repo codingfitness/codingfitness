@@ -14,7 +14,6 @@ describe('binarySum', function() {
     var c = binarySum(a,b);
     expect(convertDecimal(a) + convertDecimal(b)).to.equal(convertDecimal(c));
   });
- 
   it('should find the sum for test case 2', function() {
     var a = [1, 0];
     var b = [0, 1];
@@ -35,7 +34,6 @@ describe('binarySum', function() {
     var c = binarySum(a,b);
     expect(convertDecimal(a) + convertDecimal(b)).to.equal(convertDecimal(c));
   });
-  
   it('should find the sum for test case 5', function() {
     var a = [1];
     var b = [0];
@@ -63,6 +61,6 @@ describe('binarySum', function() {
     var c = binarySum(a,b);
     expect(convertDecimal(a) + convertDecimal(b)).to.equal(convertDecimal(c));
   });
-  
+
 
 });

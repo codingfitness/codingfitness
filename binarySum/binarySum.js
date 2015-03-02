@@ -10,5 +10,18 @@ binarySum ([1, 0], [0, 1]); // returns [0, 1, 1]
 */
 
 var binarySum = function (a, b) {
-  // Your code here
+  a = a.slice().reverse();
+  b = b.slice().reverse();
+  var numOne = 0;
+  var numTwo = 0;
+  a.forEach(function(el, ind){
+    var power = Math.pow(2, ind);
+    numOne += el * power;
+    numTwo += b[ind] * power;
+  })
+  var binaryArray = (numOne + numTwo).toString(2).split('').map(function(el){return parseInt(el)});
+  while(binaryArray.length < a.length){
+    binaryArray.unshift(0)
+  }
+  return binaryArray;
 }
