@@ -17,16 +17,14 @@
     </script>
 
     <!-- Load tests and helpers here -->
-    <script src="isSquare.js"></script>
-    <script src="isSquareSpec.js"></script>
+    <script src="intervalSum.js"></script>
+    <script src="intervalSumSpec.js"></script>
 
 
     <script>
       // Mocha expects a global onload var here and automagically executes it on pageload
       onload = function(){
-
-        var runner = window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run();       
-
+        var runner = window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run();
       };
     </script>
   </head>
